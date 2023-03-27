@@ -96,6 +96,11 @@
   margin-top: 3rem;
 }
 
+.btn-secondary:hover {
+  box-shadow: 0 3px 20px -8px #000;
+  transform: translateY(-5px);
+}
+
 @media (min-width: 840px) and (max-width: 1045px) {
   .btn-secondary {
     margin-top: 0.1rem;
