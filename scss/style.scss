@@ -1,0 +1,42 @@
+@import "variables";
+@import "button";
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+body{
+    background-color: $light-color;
+    font-family: $font-family;
+    line-height: 1.6;
+}
+
+img{
+    width: 100%;
+}
+
+.showcase{
+    background-image: url(../Img/bg.png);
+    background-position-y: 50%;
+    width: 100%;
+    @include set-background-color($primary-color);
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-size: cover;
+
+    // Nav Component
+    @import "header";
+ 
+    // Showcase content
+    @import "hero";
+}
+
+.container{
+    // max-width: ;    
+    width: min(90%, $max-width);
+}

@@ -1,0 +1,23 @@
+%button{
+    display: inline-block;
+    border-radius: 4px;
+    padding: 14px 36px;
+    font-size: 13px;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: all 0.5s;
+}
+
+
+.btn-secondary{
+    @extend %button;
+    @include set-background-color($secondary-color);
+    margin-top: 3rem;
+}
+
+@media (min-width: 840px) and (max-width: 1045px) {
+    .btn-secondary{
+        margin-top: 0.1rem;
+    }
+}
